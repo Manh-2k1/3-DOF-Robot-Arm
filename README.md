@@ -68,9 +68,14 @@ To facilitate the control and monitoring of the robot's activities, the matching
   <i>Interface Control</i>
 </p>
 
-# Simulation results
+Interface function:
+* **Set Home button**: run the robot model in the Set Home position.
+* **STOP button**: stop running the robot model.
+* **RESET button**: reset the value of theta angles to 0.
+* **SOLVE button**: calculate angle theta 1,2,3 from the given position of Px, Py, Pz.
+* **Enter the simulated angle in 2 ways**: drag the slider or enter it directly.
+* **Inverse kinematics**: synchronous control of joints.
 
-
-# Video Design intelligent controllers for a 2-DOF manipulator
-https://youtu.be/SbA-9qXNue8
-
+# Experiments results
+Detailed instructions for calculating forward and reverse kinematics, designing a 3-DOF robot model on SolidWorks software, programming Arduino and designing a control interface on Python as follows: https://youtu.be/alXVkWIuink
+Demo in real-time to test Forward and Inverse kinematics: https://youtu.be/NMyBhp15TCM
