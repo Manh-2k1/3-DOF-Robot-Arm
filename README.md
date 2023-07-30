@@ -78,4 +78,5 @@ Interface function:
 
 # Experiments results
 Detailed instructions for calculating forward and reverse kinematics, designing a 3-DOF robot model on SolidWorks software, programming Arduino and designing a control interface on Python as follows: https://youtu.be/alXVkWIuink
+
 Demo in real-time to test Forward and Inverse kinematics: https://youtu.be/NMyBhp15TCM
