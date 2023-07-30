@@ -9,7 +9,7 @@ This project designs and constructs a 3-degree-of-freedom robotic arm model. Cal
 The 3-degree-of-freedom robot arm model is designed on SolidWorks software as shown below:
 
 <p align="center">
-  <img src="images/robot_3dof.png" width=600><br/>
+  <img src="images/robot_3dof.png" width=400><br/>
   <i>Robot 3-DOF in Solidworks</i>
 </p>
 
@@ -26,48 +26,50 @@ The model of 3-DOF robot arm in practice after construction is as follows:
 
 <p align="center">
   <img src="images/coordinate_axes_robot.png" width=400><br/>
-  <i>PD Fuzzy controller</i>
+  <i>Coordinate axes of robot 3-DOF</i>
 </p>
 
-# Neural Networks (NN)
-The neural controller is created based on the signal transmission and processing mechanism of the human brain. The construction of the neural controller is to create an artificial neural network that mimics the working process of the human brain. The essence of an artificial neural network is a distributed parallel computing network.
+The physical parameter table of the model:
+
+| Parameters Robot 3-DOF   | Meaning     |
+|--------------------------|:----------:|
+| L1 = 105mm               | Length of link 1 | 
+| L2 = 162mm               | Length of link 2 |
+| L3 = 130mm               | Length of link 3 | 
+| d1 = 270mm               | Deviation of the joint | 
+| d3 = 55mm                | Deviation of the joint | 
+
+*	Check the results of kinematics on Matlab Simulink
 
 <p align="center">
-  <img src="images/neural.png" width=400><br/>
+  <img src="images/test_kinematic.png" width=600><br/>
+  <i>Simulate angle value matching 3 angles theta = 0</i>
+</p>
+
+# Drawing workspaces robot 3-DOF arm
+The robot's workspace is the area containing the points and positions that the robot's end mechanism can reach. By determining the workspace of the robot, we can meet the requirements and tasks of the robot in reality, as well as upgrade and improve the robot later.
+To determine the workspace of the robot, the team used the results of forward kinematics and based on the solutions of the inverse kinematics to build a program to draw the workspace on Matlab software. The figure below shows the workspace output after running the program.
+
+<p align="center">
+  <img src="images/workspaces.png" width=400><br/>
   <i>Predictive neural network model</i>
 </p>
 
-# Genetic Algorithm (GA)
-Genetic Algorithm (GA) is an algorithm that searches for the optimal solution on the principle of guesswork according to the evolutionary process and genetic laws of organisms in nature. In genetic algorithms for optimization problems, the idea is that a set of chromosomes in individuals will be allowed to evolve toward a selection of progressively better solutions.
+# Program and Interface Control
+To facilitate the control and monitoring of the robot's activities, the matching variable values, the work coordinates. The team created the console on the Sublime Text software using the Python language.
 
 <p align="center">
-  <img src="images/GA.png" width=200><br/>
-  <i>Genetic Algorithm Flowchart</i>
+  <img src="images/GUI_robot.png" width=600><br/>
+  <i>Opening interface</i>
+</p>
+
+<p align="center">
+  <img src="images/Gui_control.png" width=600><br/>
+  <i>Interface Control</i>
 </p>
 
 # Simulation results
-Output response of joints (left picture is joint 1, right is joint 2).
 
-* **Fuzzy Logic:**
-
-<div style="display: flex;">
-  <img src="images/fuzzy_joint1.png" width="400">
-  <img src="images/fuzzy_joint2.png" width="400">
-</div>
-
-* **Neural Networks:**
-
-<div style="display: flex;">
-  <img src="images/neural_joint1.png" width="400">
-  <img src="images/neural_joint2.png" width="400">
-</div>
-
-* **Genetic Algorithm:**
-
-<div style="display: flex;">
-  <img src="images/GA_joint1.png" width="400">
-  <img src="images/GA_joint2.png" width="400">
-</div>
 
 # Video Design intelligent controllers for a 2-DOF manipulator
 https://youtu.be/SbA-9qXNue8
